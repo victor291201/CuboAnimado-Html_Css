@@ -1,7 +1,7 @@
 html{
 	position: relative;
 	display:block;
-	overflow:auto;
+	overflow:none;
 	margin: 0px;
 	padding:0px;
 }
@@ -10,6 +10,7 @@ body{
 	background: #333;
 	display: inline-flex;
 	height: 100vh;
+	min-height: 90vh;
 	width: 100%;
 }
 .contenedor{
@@ -46,8 +47,8 @@ body{
 	position: relative;
 	display: inline-block;
 	border: 1px solid black;
-	width: 33%;
-	height: 33%;
+	width: 66.6666666667px;
+	height: 66.6666666667px;
 	margin: -2.6px;
 	padding: 0px;
 }
