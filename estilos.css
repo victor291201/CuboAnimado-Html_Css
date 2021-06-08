@@ -1,0 +1,78 @@
+html{
+	position: relative;
+	display:block;
+	overflow:auto;
+	margin: 0px;
+	padding:0px;
+	background: red;
+}
+body{
+	margin: 0;
+	background: #333;
+	display: inline-flex;
+	height: 100vh;
+	width: 100%;
+}
+.contenedor{
+	margin: auto;
+	perspective: 700px;
+}
+.cubo{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	transform-style: preserve-3d;
+	animation: girar 5s infinite linear;
+}
+
+@keyframes girar {
+  from {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  
+  to {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+
+
+.cara {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.cara .p{
+	top: 2px;
+	left: 2px;
+	position: relative;
+	display: inline-block;
+	border: 1px solid black;
+	width: 33%;
+	height: 33%;
+	margin: -2.6px;
+	padding: 0px;
+}
+#uno{
+	background: crimson;
+	transform: translateZ(100px);
+}
+#dos{
+	background: darkorange;
+	transform: translateX(100px) rotateY(90deg);
+}
+#tres{
+	background: yellow;
+	transform: translateZ(-100px);
+}
+#cuatro{
+	background: blue;
+	transform: translateX(-100px) rotateY(90deg);
+}
+#cinco{
+	background: green;
+	transform: translateY(-100px) rotateX(90deg);
+}
+#seis{
+	background: white;
+	transform: translateY(100px) rotateX(90deg);
+}
